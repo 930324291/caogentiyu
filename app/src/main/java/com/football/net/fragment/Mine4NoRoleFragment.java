@@ -30,10 +30,8 @@ import com.football.net.http.request.RequestParam;
 import com.football.net.manager.BaseFragment;
 import com.football.net.manager.FootBallApplication;
 import com.football.net.ui.MineCenter4NoRoleAtivity;
-import com.football.net.ui.MineCenter4NoRoleAtivity_;
 import com.football.net.ui.MineInfoActivity;
 import com.football.net.ui.MinePersonalInfoAtivity;
-import com.football.net.ui.MinePersonalInfoAtivity_;
 import com.football.net.ui.PlayerDetial4CaptainActivity;
 import com.football.net.ui.PlayerDetialActivity;
 import com.football.net.ui.TeamDetialActivity1;
@@ -109,7 +107,7 @@ public class Mine4NoRoleFragment extends BaseFragment {
         }
         switch (v.getId()) {
             case R.id.userCenter:
-                    mContext.startActivity(new Intent(mContext,MineCenter4NoRoleAtivity_.class));
+                    mContext.startActivity(new Intent(mContext,MineCenter4NoRoleAtivity.class));
 
                 break;
             case R.id.header:
@@ -125,7 +123,7 @@ public class Mine4NoRoleFragment extends BaseFragment {
                 }
                 break;
             case R.id.myinfo:
-                Intent intent0 = new Intent(mContext,MinePersonalInfoAtivity_.class);
+                Intent intent0 = new Intent(mContext,MinePersonalInfoAtivity.class);
                 mContext.startActivity(intent0);
                 break;
             case R.id.user_foot:

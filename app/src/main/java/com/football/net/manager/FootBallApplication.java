@@ -16,6 +16,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v13.app.ActivityCompat;
 
+import com.avos.avoscloud.AVOSCloud;
 import com.football.net.R;
 import com.football.net.bean.PlayerLikeBean;
 import com.football.net.bean.TeamLikeBean;
@@ -108,6 +109,8 @@ public class FootBallApplication extends Application implements IConfig {
         userbean = new UserBean();
         teamLikes = new ArrayList<>();
         playerLikes = new ArrayList<>();
+        AVOSCloud.initialize(this,"5nRYKuCbcFYPpNIb6JPzlXc5-gzGzoHsz","0VezuRWkVhnOwG7HeuRiCwo6");
+
         new Thread(new Runnable() {
             @Override
             public void run() {

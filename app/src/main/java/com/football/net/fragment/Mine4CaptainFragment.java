@@ -37,14 +37,10 @@ import com.football.net.http.request.RequestParam;
 import com.football.net.manager.BaseFragment;
 import com.football.net.manager.FootBallApplication;
 import com.football.net.ui.MineCenter4CaptainAtivity;
-import com.football.net.ui.MineCenter4CaptainAtivity_;
 import com.football.net.ui.MineCenter4MemberAtivity;
-import com.football.net.ui.MineCenter4MemberAtivity_;
 import com.football.net.ui.MineInfoActivity;
 import com.football.net.ui.MinePersonalInfoAtivity;
-import com.football.net.ui.MinePersonalInfoAtivity_;
 import com.football.net.ui.MineTeamAtivity;
-import com.football.net.ui.MineTeamAtivity_;
 import com.football.net.ui.PlayerDetial4CaptainActivity;
 import com.football.net.ui.PlayerDetialActivity;
 import com.football.net.ui.TeamDetialActivity1;
@@ -361,9 +357,9 @@ public class Mine4CaptainFragment extends BaseFragment {
         switch (v.getId()) {
             case R.id.userCenter:
                 if (FootBallApplication.APPLacationRole == FootBallApplication.ROLE_TeamMember) {
-                    mContext.startActivity(new Intent(mContext, MineCenter4MemberAtivity_.class));
+                    mContext.startActivity(new Intent(mContext, MineCenter4MemberAtivity.class));
                 } else {
-                    mContext.startActivity(new Intent(mContext, MineCenter4CaptainAtivity_.class));
+                    mContext.startActivity(new Intent(mContext, MineCenter4CaptainAtivity.class));
                 }
                 break;
             case R.id.header:
@@ -379,12 +375,12 @@ public class Mine4CaptainFragment extends BaseFragment {
                 }
                 break;
             case R.id.myinfo:
-                Intent intent0 = new Intent(mContext, MinePersonalInfoAtivity_.class);
+                Intent intent0 = new Intent(mContext, MinePersonalInfoAtivity.class);
                 mContext.startActivity(intent0);
                 break;
             case R.id.myteam:
                 if (FootBallApplication.userbean.getTeam() != null) {
-                    Intent intent = new Intent(getActivity(), MineTeamAtivity_.class);
+                    Intent intent = new Intent(getActivity(), MineTeamAtivity.class);
                     startActivity(intent);
                 } else {
                     showMsg("您还没有加入任何球队！");

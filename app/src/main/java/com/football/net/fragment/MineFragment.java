@@ -23,7 +23,7 @@ import com.football.net.manager.BaseFragment;
 import com.football.net.manager.FootBallApplication;
 import com.football.net.ui.MineApplyActivity;
 import com.football.net.ui.MineCenterAtivity;
-import com.football.net.ui.MineCenterAtivity_;
+import com.football.net.ui.MineCenterAtivity;
 import com.football.net.ui.MineInfoActivity;
 import com.football.net.ui.MinePicturectivity;
 import com.football.net.ui.MineRecuritActivity;
@@ -189,7 +189,7 @@ public class MineFragment extends BaseFragment {
         }
         switch (v.getId()) {
             case R.id.userCenter:
-                mContext.startActivity(new Intent(mContext,MineCenterAtivity_.class));
+                mContext.startActivity(new Intent(mContext,MineCenterAtivity.class));
                 break;
             case R.id.header:
                 mContext.startActivity(new Intent(mContext,MineInfoActivity.class));

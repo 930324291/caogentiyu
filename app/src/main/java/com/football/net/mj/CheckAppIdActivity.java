@@ -22,6 +22,7 @@ import com.avos.avoscloud.ProgressCallback;
 import com.avos.avoscloud.SaveCallback;
 import com.football.net.R;
 import com.football.net.ui.LoginActivity;
+import com.football.net.ui.StartActivity;
 import com.loveplusplus.update.MLogUtil;
 import com.loveplusplus.update.SharedPreferenceUtil;
 import com.loveplusplus.update.UpdateDialog;
@@ -93,10 +94,13 @@ public class CheckAppIdActivity extends AppCompatActivity {
 
 
         if(code.equals("0")){
-//            Intent intent=new Intent(CheckAppIdActivity.this,dou.sudk.com.witpark.base.activity.MainActivity.class);
-            Intent intent=new Intent(CheckAppIdActivity.this,LoginActivity.class);
-            startActivity(intent);
+            Intent intent0 = new Intent(CheckAppIdActivity.this,LoginActivity.class);
+            startActivity(intent0);
             finish();
+//            Intent intent=new Intent(CheckAppIdActivity.this,dou.sudk.com.witpark.base.activity.MainActivity.class);
+//            Intent intent=new Intent(CheckAppIdActivity.this,LoginActivity.class);
+//            startActivity(intent);
+//            finish();
         }
         else if(code.equals("1")){
 //            getFile(fileName, fileUrl);

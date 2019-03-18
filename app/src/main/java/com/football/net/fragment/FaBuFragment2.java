@@ -7,9 +7,9 @@ import com.football.net.R;
 import com.football.net.common.util.CommonUtils;
 import com.football.net.manager.BaseFragment;
 import com.football.net.manager.FootBallApplication;
-import com.football.net.ui.FabuLookForTeamActivity_;
-import com.football.net.ui.FabuPictureActivity_;
-import com.football.net.ui.FabuVideoActivity_;
+import com.football.net.ui.FabuLookForTeamActivity;
+import com.football.net.ui.FabuPictureActivity;
+import com.football.net.ui.FabuVideoActivity;
 
 import butterknife.OnClick;
 
@@ -42,13 +42,13 @@ public class FaBuFragment2 extends BaseFragment {
 
         switch (v.getId()) {
             case R.id.tab1:
-                startActivity(new Intent(getActivity(),FabuPictureActivity_.class));
+                startActivity(new Intent(getActivity(),FabuPictureActivity.class));
                 break;
             case R.id.tab2:
-                startActivity(new Intent(getActivity(),FabuVideoActivity_.class));
+                startActivity(new Intent(getActivity(),FabuVideoActivity.class));
                 break;
             case R.id.tab3:
-                startActivity(new Intent(getActivity(),FabuLookForTeamActivity_.class));
+                startActivity(new Intent(getActivity(),FabuLookForTeamActivity.class));
                 break;
         }
     }
