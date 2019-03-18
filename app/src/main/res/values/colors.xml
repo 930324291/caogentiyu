@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="bg_f0">#f0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#336085af</color>
+    <color name="transparent_4d">#4d6085af</color>
+
+    <color name="bg_457c96">#457c96</color>
+    <color name="bg_7dd9fd">#7dd9fd</color>
+    <color name="bg_999999">#999999</color>
+    <color name="bg_797878">#797878</color>
+    <color name="bg_0c1624">#0c1624</color>
+    <color name="bg_ebebeb">#ebebeb</color>
+    <color name="bg_042d45">#042d45</color>
+    <color name="bg_112d4a">#112d4a</color>
+    <color name="bg_6088b2">#6088b2</color>
+    <color name="bg_051429">#051429</color>
+    <color name="bg_63b3db">#63b3db</color>
+    <color name="bg_275681">#275681</color>
+    <color name="bg_FFDEAD">#FFDEAD</color>
+    <color name="text0063f3">#0063f3</color>
+
+    <color name="bg_FFA19D9D">#FFA19D9D</color>
+
+    <color name="line_FFA19D9D">#FFA19D9D</color>
+
+
+    <color name="txt_042d45">#042d45</color>
+    <color name="txt_7dd9fd">#7dd9fd</color>
+    <color name="txt_787878">#797878</color>
+    <color name="txt_d6dd6b">#d6dd6b</color>
+    <color name="txt_f8fb18">#f8fb18</color>
+    <color name="txt_f0fe19">#f0fe19</color>
+    <color name="bg_4a7e9c">#4a7e9c</color>
+    <color name="txt_0f2540">#4a7e9c</color>
+    <color name="bg_6085A7">#6085A7</color>
+    <color name="txt_c1c1c1">#c1c1c1</color>
+    <color name="bg_f15661">#F15661</color>
+    <color name="txt_e0e0e0">#e0e0e0</color>
+    <color name="txt_f3f3f3">#f3f3f3</color>
+    <color name="splash_bg">#192a3a</color>
+    <color name="grid_divider">#3C6B8C</color>
+    <color name="progress_wine_color">#d24343</color>
+    <color name="progress_draw_color">#e4ae2b</color>
+    <color name="progress_lose_color">#009944</color>
+</resources>

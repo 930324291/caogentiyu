@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/default_bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016.09.25晚上 相约上海海力布球场"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timeV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2017年1月1日 8:30"
+            android:textColor="@color/txt_c1c1c1"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="大姐夫圣诞节发送代课教大姐夫圣诞节发送代课教师的"
+            android:textColor="@color/txt_c1c1c1"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/id_shark_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/id_player_head_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/add"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/id_channel_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2.5dp"
+            android:src="@mipmap/r_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

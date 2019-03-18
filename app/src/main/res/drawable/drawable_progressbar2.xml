@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+        android:right="-3dp">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:bottomLeftRadius="7dp"
+                android:topLeftRadius="7dp"/><!-- 设置圆角半径 -->
+
+            <!-- 填充 -->
+            <solid android:color="#182a39" /><!-- 填充的颜色 -->
+
+            <!-- 描边 -->
+            <stroke
+                android:width="2dp"
+                android:color="#698aa0"/>
+
+        </shape>
+
+    </item>
+    <item android:id="@android:id/secondaryProgress"
+        android:right="-3dp">
+        <clip>
+            <shape>
+                <!-- 圆角 -->
+                <corners android:bottomLeftRadius="7dp"
+                    android:topLeftRadius="7dp"/>
+
+                <!-- 填充 -->
+                <solid android:color="@color/progress_draw_color" /><!-- 填充的颜色 -->
+
+                <!-- 描边 -->
+                <stroke
+                    android:width="2dp"
+                    android:color="#698aa0" />
+
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress"
+        android:right="-3dp">
+        <clip>
+            <shape>
+                <!-- 圆角 -->
+                <corners android:bottomLeftRadius="7dp"
+                android:topLeftRadius="7dp"/>
+
+                <!-- 填充 -->
+                <solid android:color="@color/progress_draw_color" /><!-- 填充的颜色 -->
+
+                <!-- 描边 -->
+                <stroke
+                    android:width="2dp"
+                    android:color="#698aa0"/>
+
+            </shape>
+        </clip>
+    </item>
+</layer-list>

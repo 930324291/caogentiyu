@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/chpw_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_title"/>
+
+
+    <EditText
+        android:id="@+id/atitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_ebebeb"
+        android:gravity="center_vertical"
+        android:hint="标题"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_787878"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/sp_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/acontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp"
+            android:background="@color/bg_ebebeb"
+            android:gravity="top"
+            android:hint="内容"
+            android:maxLength="1200"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_787878"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/wordCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="0/1200"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/txt_787878"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/selectView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="15dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="权限选择: "-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp" />-->
+        <!--<ImageView-->
+            <!--android:id="@+id/select1"-->
+            <!--android:layout_width="12dp"-->
+            <!--android:layout_height="12dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/fabu_select_tag_selector"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvselect1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="发布到广场"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="权限选择: "-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/select2"-->
+            <!--android:layout_width="12dp"-->
+            <!--android:layout_height="12dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/fabu_select_tag_selector"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="发布到指定球队"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp" />-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg2"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/txt_042d45"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

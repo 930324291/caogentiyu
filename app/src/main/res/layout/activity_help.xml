@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#665881b3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@mipmap/phone_icon_1" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="客服电话：131 2232 3888"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@mipmap/qq_icon" />
+
+                <TextView
+                    android:id="@+id/qqNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="QQ群：149175503"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#665881b3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@mipmap/wechatz_icon" />
+
+                <TextView
+                    android:id="@+id/weixinNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="微信号：S13122323888"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>

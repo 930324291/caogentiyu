@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/player_detial_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/id_modify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#2aa46e"
+            android:text="编辑"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/id_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="#2aa46e"
+            android:text="保存"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="407dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/bgview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/footballfield" />
+
+        <com.football.net.widget.DragGrid
+            android:id="@+id/id_modify_gridv"
+            android:layout_width="282dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="47dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="7"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" />
+    </RelativeLayout>
+
+    <com.football.net.widget.OtherGrid
+        android:id="@+id/id_modify_pos_gridv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:numColumns="7"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

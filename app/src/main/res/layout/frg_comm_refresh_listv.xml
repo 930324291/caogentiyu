@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.football.net.widget.SwipyRefreshLayout
+        android:id="@+id/id_order_refresh_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <ListView
+            android:id="@+id/id_order_listv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp" />
+    </com.football.net.widget.SwipyRefreshLayout>
+
+    <include layout="@layout/recycleview_empty" />
+</LinearLayout>

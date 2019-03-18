@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/people_tab_text_bg_selector"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="#fce81d"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/people_tab_text_bg_selector"
+            android:gravity="center"
+            android:text="3人制"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="#fce81d"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/people_tab_text_bg_selector"
+            android:gravity="center"
+            android:text="5人制"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="#fce81d"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/people_tab_text_bg_selector"
+            android:gravity="center"
+            android:text="7人制"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="#fce81d"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/people_tab_text_bg_selector"
+            android:gravity="center"
+            android:text="11人制"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/line5"
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="#fce81d"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

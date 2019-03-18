@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="75dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@mipmap/weight_icon" />
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image1"
+        android:layout_alignTop="@+id/image1"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/titleV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2016.09.25晚上 相约上海海力布球场"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timeV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="刚刚"
+            android:textColor="@color/txt_c1c1c1"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="大姐夫圣诞节发送代课教大姐夫圣诞节发送代课教师的"
+        android:textColor="@color/txt_c1c1c1"
+        android:textSize="11sp"
+        android:layout_below="@+id/lin_title"
+        android:layout_alignLeft="@+id/lin_title"
+        android:layout_alignStart="@+id/lin_title" />
+
+</RelativeLayout>
+
+

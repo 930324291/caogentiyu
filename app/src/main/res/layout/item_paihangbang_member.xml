@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@mipmap/mail_icon"/>
+        <TextView
+            android:id="@+id/teamMemberName"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="5"
+            android:ellipsize="end"
+            android:text="球员"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <ImageView
+            android:id="@+id/duiHuiImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:src="@mipmap/mail_icon"/>
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="球队"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/positionInTeam"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="位置"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="年龄"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/bodyHeight"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="身高"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/idNo"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="号码"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/likeimage"
+                    android:layout_width="12dp"
+                    android:layout_height="11dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@mipmap/like_icon"/>
+                <TextView
+                    android:id="@+id/renqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="人气"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+        </LinearLayout>
+
+</LinearLayout>

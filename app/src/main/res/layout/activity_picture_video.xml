@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_header_bg">
+
+
+        <ImageView
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerCrop"
+            android:onClick="finish"
+            android:src="@mipmap/return_icon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/leftbtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_inform_tab"
+                android:gravity="center"
+                android:text="图片"
+                android:textColor="@color/text_video_picture_tab1_selector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/wrightbtn"
+                android:layout_toRightOf="@+id/leftbtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_inform_tab"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="@color/text_video_picture_tab1_selector"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>

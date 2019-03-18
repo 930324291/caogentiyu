@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp">
+
+
+    <include layout="@layout/header_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="队徽"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/football" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/sp_1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_ebebeb">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/teamName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_ebebeb"
+        android:hint="队名"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_787878"
+        android:textSize="@dimen/textsize_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/videoDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bg_ebebeb"
+            android:gravity="top|left"
+            android:hint="球队简介"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/txt_787878"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/wordCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="0/1200"
+            android:textColor="@color/txt_787878" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/commitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_solid_7d_bg"
+        android:text="创建球队"
+        android:textColor="@color/bg_0c1624" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">草根足球</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="home_title_tab">
+        <item>头条</item>
+        <item>广场</item>
+        <item>球队</item>
+        <item>球员</item>
+        <item>赛事</item>
+        <item>转会</item>
+        <item>球场</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+  <string name="transition_pro"
+      translatable="false">proimage</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_firstnews_new_game">最新赛事</string>
+    <string name="txt_firstnews_history_game">历史赛事</string>
+    <string name="txt_firstnews_top_news">头条</string>
+    <string name="txt_firstnews_football_ground">球场</string>
+    <string name="title_recruit_people_detail">招人详情</string>
+    <string name="title_find_team_detail">找队详情</string>
+    <string name="title_football_ground_detail">球场详情</string>
+    <string name="title_activity_detail">活动详情</string>
+    <string name="title_modify_back">编辑战术板</string>
+    <string name="title_create_team">创建球队</string>
+    <string name="title_pic">图片</string>
+    <string name="title_squre_video">视频</string>
+    <string name="title_apply">找队</string>
+    <string name="title_recruit">招人</string>
+    <string name="title_football_info_duiyaun">球队成员</string>
+    <string name="title_football_info_dangan">球队信息</string>
+    <string name="title_football_info_zhanji">球队战绩</string>
+    <string name="title_player_people">球员图片</string>
+    <string name="title_player_picture">球员图片</string>
+    <string name="title_player_info">球员信息</string>
+    <string name="title_player_zhanji">球员战绩</string>
+
+    <string name="title_inform">通知</string>
+    <string name="title_inform_new_member_approve">新队员审批</string>
+    <string name="title_inform_member_recruit_detial">邀我入队</string>
+    <string name="title_inform_sign_detial">活动详情</string>
+    <string name="title_inform_sign_on_the_spot">现场签到</string>
+    <string name="title_forget_password">忘记密码</string>
+    <string name="title_member_sign_detail">活动详情</string>
+    <string name="title_select_team">选择球队</string>
+    <string name="title_appoint_game">约战</string>
+    <string name="title_mine">我</string>
+
+    <string name="title_mine_info">个人档案</string>
+    <string name="title_firstnews_detial">新闻详情</string>
+    <string name="user_know">用户须知</string>
+    <string name="game_detail">赛事详情</string>
+
+    <string name="title_signein_message">签到信</string>
+    <string name="title_inner_message">站内信</string>
+
+    <string name="title_news">头条新闻</string>
+
+    <string name="title_mine_gamelist">约战</string>
+    <string name="title_mine_exercise">参加的活动</string>
+    <string name="title_mine_score">比赛</string>
+    <string name="title_mine_help">帮助</string>
+    <string name="title_score_list">比分录入</string>
+    <string name="txt_space">&#160;&#160;</string>
+    <string name="title_duihui">队徽</string>
+    <string name="title_search_result">搜索结果</string>
+    <string name="txt_join_team">加入球队</string>
+</resources>
