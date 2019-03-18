@@ -142,7 +142,7 @@ public class SquarePhotoAdapter extends UltimateViewAdapter<SquarePhotoAdapter.V
             if (bean.getPicsList() != null && bean.getPicsList().size() > 0) {
                 String pic = bean.getPicsList().get(0).getUrl();
                 if (!StringUtils.isEmpty(pic)) {
-                    ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(pic), imageview, FootBallApplication.options);
+                    ImageLoader.getInstance().displayImage(CommonUtils.getRurl(pic), imageview, FootBallApplication.options);
                 } else {
                     imageview.setImageResource(R.color.pickerview_bg_topbar);
                 }

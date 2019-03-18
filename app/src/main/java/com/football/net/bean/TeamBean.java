@@ -14,7 +14,7 @@ public class TeamBean extends SearchBean implements Serializable {
     private String teamTitle;
     private String teamType;
     private int total;
-    private int id;
+    private int id = 0;
     private int win;
     private int lost;
     private int even; //平

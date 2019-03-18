@@ -246,11 +246,23 @@ public class FootBallTeamInfoActivity extends BasicActivity {
                 dianzanView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (FootBallApplication.teamLikes.size()>=FootBallApplication.like_team_max) {
-                            showMsg("您一天之内只有"+FootBallApplication.like_team_max+"次给球队点赞的机会！");
-                        } else {
-                            commit();
-                        }
+                        showMsg("点赞成功");
+
+                        teamBean.setLikeNum(teamBean.getLikeNum()+1);
+                        likesNum.setText(teamBean.getLikeNum()+"");
+
+                        dianzanView.setBackgroundResource(R.drawable.shape_praise_grey_bg);
+                        dianzanView.setClickable(false);
+
+                        // 将点赞的记录填写到全局teamlikes中
+                        TeamLikeBean bean = new TeamLikeBean(teamBean,FootBallApplication.userbean,1);
+                        FootBallApplication.teamLikes.add(bean);
+
+//                        if (FootBallApplication.teamLikes.size()>=FootBallApplication.like_team_max) {
+//                            showMsg("您一天之内只有"+FootBallApplication.like_team_max+"次给球队点赞的机会！");
+//                        } else {
+//                            commit();
+//                        }
                     }
                 });
 

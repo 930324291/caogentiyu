@@ -118,7 +118,7 @@ public class SquareApplyAdapter extends UltimateViewAdapter<SquareApplyAdapter.V
         private void bindview(int position,ApplyBean bean){
             if(bean.getPlayer() != null){
                 if (!StringUtils.isEmpty(bean.getPlayer().getIconUrl())) {
-                    ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getPlayer().getIconUrl()),imageview, FootBallApplication.circOptions);
+                    ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getPlayer().getIconUrl()),imageview, FootBallApplication.circOptions);
                 } else {
                     // ImageLoader.getInstance().displayImage("http://football001.com/web/img/nopic.png", imageview, FootBallApplication.circOptions);
                     Glide.with(mContext).load(R.mipmap.nopic).crossFade().into(imageview);

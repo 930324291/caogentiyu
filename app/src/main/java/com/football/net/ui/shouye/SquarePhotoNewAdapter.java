@@ -160,7 +160,7 @@ public class SquarePhotoNewAdapter extends UltimateViewAdapter<SquarePhotoNewAda
 
         private void bindview(int position, SquarePhotoBean bean) {
             if (bean.getPics() != null && bean.getPics().size() > 0) {
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(bean.getPicsList().get(0).getUrl()), imageview, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getPicsList().get(0).getUrl()), imageview, FootBallApplication.options);
             }
 
             contentV.setText(bean.getComment());

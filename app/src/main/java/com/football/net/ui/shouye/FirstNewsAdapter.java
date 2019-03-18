@@ -81,7 +81,7 @@ public class FirstNewsAdapter extends BaseAdapter {
 
         if (!StringUtils.isEmpty(bean.getThumbnail())) {
             vHolder.iv_news_icon.setVisibility(View.VISIBLE);
-            Glide.with(mContext).load(HttpUrlConstant.SERVER_URL+bean.getThumbnail()).crossFade().into(vHolder.iv_news_icon);
+            Glide.with(mContext).load(bean.getThumbnail()).crossFade().into(vHolder.iv_news_icon);
         } else {
             Glide.with(mContext).load(R.mipmap.nopic2).crossFade().into(vHolder.iv_news_icon);
         }

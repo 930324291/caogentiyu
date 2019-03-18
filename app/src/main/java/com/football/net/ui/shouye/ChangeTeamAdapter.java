@@ -132,7 +132,7 @@ public class ChangeTeamAdapter extends UltimateViewAdapter<ChangeTeamAdapter.Vie
 
         private void bindView(final TransferBean bean){
            if(bean.getFromTeam() != null){
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+ CommonUtils.getRurl(bean.getFromTeam().getIconUrl()), imageA, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getFromTeam().getIconUrl()), imageA, FootBallApplication.options);
                 nameA.setText(bean.getFromTeam().getTeamTitle());
                layout1.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -156,7 +156,7 @@ public class ChangeTeamAdapter extends UltimateViewAdapter<ChangeTeamAdapter.Vie
                layout1.setOnClickListener(null);
            }
             if(bean.getToTeam() != null){
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+ CommonUtils.getRurl(bean.getToTeam().getIconUrl()), imageB, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getToTeam().getIconUrl()), imageB, FootBallApplication.options);
                 nameB.setText(bean.getToTeam().getTeamTitle());
                 layout2.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -187,7 +187,7 @@ public class ChangeTeamAdapter extends UltimateViewAdapter<ChangeTeamAdapter.Vie
             timeB.setText(CommonUtils.getDateStr(bean.getToTime(),"yyyy-MM-dd"));
             if(bean.getPlayer()!= null){
                 if (!StringUtils.isEmpty(bean.getPlayer().getIconUrl())) {
-                    ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(bean.getPlayer().getIconUrl()), imageHeader, FootBallApplication.circOptions);
+                    ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getPlayer().getIconUrl()), imageHeader, FootBallApplication.circOptions);
                 } else {
                     // ImageLoader.getInstance().displayImage("http://football001.com/web/img/nopic.png", imageHeader, FootBallApplication.circOptions);
                     Glide.with(mContext).load(R.mipmap.nopic).crossFade().into(imageHeader);

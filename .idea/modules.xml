@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CaoGenZuQiu.iml" filepath="$PROJECT_DIR$/.idea/CaoGenZuQiu.iml" />
-      <module fileurl="file://F:\mjwork\CaoGenZuQiu\CaoGenZuQiu.iml" filepath="F:\mjwork\CaoGenZuQiu\CaoGenZuQiu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://F:\mjwork\CaoGenZuQiu\app\app.iml" filepath="F:\mjwork\CaoGenZuQiu\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediapicker/mediapicker.iml" filepath="$PROJECT_DIR$/mediapicker/mediapicker.iml" />
-      <module fileurl="file://F:\mjwork\CaoGenZuQiu\mediapicker\mediapicker.iml" filepath="F:\mjwork\CaoGenZuQiu\mediapicker\mediapicker.iml" />
     </modules>
   </component>
 </project>

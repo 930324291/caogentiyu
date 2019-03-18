@@ -12,7 +12,7 @@ public class UserBean extends SearchBean implements Serializable {
     private String id = "";
     private String name = "";
     private String nickname= "";
-    private TeamBean team;
+    private TeamBean team = new TeamBean();
     private long birth;
     private long verifyTime;
     private int auditStatus = 1;

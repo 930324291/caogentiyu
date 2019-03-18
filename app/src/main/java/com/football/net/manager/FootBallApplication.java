@@ -106,6 +106,8 @@ public class FootBallApplication extends Application implements IConfig {
         //是否打印log
         appLog = true;
         userbean = new UserBean();
+        teamLikes = new ArrayList<>();
+        playerLikes = new ArrayList<>();
         new Thread(new Runnable() {
             @Override
             public void run() {

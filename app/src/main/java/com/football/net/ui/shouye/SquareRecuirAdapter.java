@@ -123,7 +123,7 @@ public class SquareRecuirAdapter extends UltimateViewAdapter<SquareRecuirAdapter
 
         private void bindview(int position,RecruitBean bean){
             if (!StringUtils.isEmpty(bean.getTeam().getIconUrl())) {
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getTeam().getIconUrl()),imageview, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getTeam().getIconUrl()),imageview, FootBallApplication.options);
             } else {
                 // ImageLoader.getInstance().displayImage("http://football001.com/web/img/nopic2.png", imageview, FootBallApplication.options);
                 Glide.with(mContext).load(R.mipmap.nopic2).crossFade().into(imageview);

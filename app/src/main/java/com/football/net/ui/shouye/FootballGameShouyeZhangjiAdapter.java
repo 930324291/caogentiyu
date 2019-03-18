@@ -130,8 +130,8 @@ public class FootballGameShouyeZhangjiAdapter extends UltimateViewAdapter<Footba
             address.setText(gameBean.getAddress());
             scoreA.setText(gameBean.getScoreA() + "");
             scoreB.setText(gameBean.getScoreB() + "");
-            ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), imageA, FootBallApplication.options);
-            ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamB().getIconUrl()), imageB, FootBallApplication.options);
+            ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), imageA, FootBallApplication.options);
+            ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamB().getIconUrl()), imageB, FootBallApplication.options);
             boolean isMyteamIsA = false;
             if (gameBean.getTeamA().getId() == id) {
                 isMyteamIsA = true;

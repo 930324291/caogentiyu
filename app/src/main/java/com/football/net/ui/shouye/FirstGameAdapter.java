@@ -176,8 +176,8 @@ public class FirstGameAdapter extends BaseAdapter {
         } else {
             vHolder.tv_result.setText(gameBean.getScoreA1() + " : " + gameBean.getScoreB1());
         }
-        ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), vHolder.imageA, FootBallApplication.circOptions);
-        ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamB() == null ? "" : gameBean.getTeamB().getIconUrl()), vHolder.imageB, FootBallApplication.circOptions);
+        ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), vHolder.imageA, FootBallApplication.circOptions);
+        ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamB() == null ? "" : gameBean.getTeamB().getIconUrl()), vHolder.imageB, FootBallApplication.circOptions);
         vHolder.teamType.setImageResource(CommonUtils.getTeamTypeImage(gameBean.getTeamType()));
 
         vHolder.imageA.setOnClickListener(new View.OnClickListener() {

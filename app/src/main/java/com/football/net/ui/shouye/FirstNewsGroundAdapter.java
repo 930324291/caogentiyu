@@ -64,7 +64,7 @@ public class FirstNewsGroundAdapter extends BaseAdapter {
         }
         FieldBean bean = dataList.get(position);
         vHolder.name.setText(bean.getName());
-        ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+ CommonUtils.getRurl(bean.getUrl()), vHolder.imageview, FootBallApplication.options);
+        ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getUrl()), vHolder.imageview, FootBallApplication.options);
         return convertView;
     }
 

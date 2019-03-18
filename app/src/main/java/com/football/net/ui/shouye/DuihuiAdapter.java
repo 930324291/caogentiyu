@@ -141,7 +141,7 @@ public class DuihuiAdapter extends UltimateViewAdapter<DuihuiAdapter.ScoreMember
         }
 
         public void bindView(int position,DuihuiBean bean) {
-            ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getUrl()), imageview, FootBallApplication.options);
+            ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getUrl()), imageview, FootBallApplication.options);
         }
     }
 

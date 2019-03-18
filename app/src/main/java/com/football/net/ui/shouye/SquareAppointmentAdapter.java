@@ -122,7 +122,7 @@ public class SquareAppointmentAdapter extends UltimateViewAdapter<SquareAppointm
         private void bindview(final int position, final GameBean bean) {
             String url = CommonUtils.getRurl(bean.getTeamA().getIconUrl());
 
-            ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + url, image1, FootBallApplication.options);
+            ImageLoader.getInstance().displayImage(url, image1, FootBallApplication.options);
             nameA.setText(bean.getTeamA().getTeamTitle());
             timeV.setText(CommonUtils.getDateStr(bean.getBeginTime(), "yyyy-MM-dd HH:mm"));
             teamType.setImageResource(CommonUtils.getTeamTypeImage(bean.getTeamType()));

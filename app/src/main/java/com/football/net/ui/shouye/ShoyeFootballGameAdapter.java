@@ -203,12 +203,12 @@ public class ShoyeFootballGameAdapter extends UltimateViewAdapter<ShoyeFootballG
                 tvBiFen1.setText(gameBean.getScoreA() == null ? "--" : gameBean.getScoreA() + "");
                 tvBiFen2.setText(gameBean.getScoreB() == null ? "--" : gameBean.getScoreB() + "");
             }
-            ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), imageA, FootBallApplication.options);
+            ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamA().getIconUrl()), imageA, FootBallApplication.options);
             if (gameBean.getTeamB() == null||gameBean.getTeamB().getId()==0) {
                 Glide.with(mContext).load(R.mipmap.icon_unknow).crossFade().into(imageB);
                 // ImageLoader.getInstance().displayImage("http://football001.com/web/img/icon_unknow.png", imageB, FootBallApplication.options);
             } else {
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL + CommonUtils.getRurl(gameBean.getTeamB().getIconUrl()), imageB, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(gameBean.getTeamB().getIconUrl()), imageB, FootBallApplication.options);
             }
         }
     }

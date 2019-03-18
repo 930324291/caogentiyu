@@ -130,7 +130,7 @@ public class FootballTeamAdapter extends UltimateViewAdapter<FootballTeamAdapter
             teamName.setText(bean.getTeamTitle());
             teamType.setImageResource(CommonUtils.getTeamTypeImage(bean.getTeamType()));
             if (!StringUtils.isEmpty(bean.getIconUrl())) {
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getIconUrl()), imageview, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getIconUrl()), imageview, FootBallApplication.options);
             }
         }
     }

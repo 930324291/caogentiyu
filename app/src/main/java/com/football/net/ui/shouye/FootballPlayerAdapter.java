@@ -137,7 +137,7 @@ public class FootballPlayerAdapter extends UltimateViewAdapter<FootballPlayerAda
             playerName.setText(TextUtils.isEmpty(bean.getName())?"暂无":bean.getName());
 
             if (!StringUtils.isEmpty(bean.getIconUrl())) {
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getIconUrl()), imageview, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getIconUrl()), imageview, FootBallApplication.options);
             }
             /*
             else {
@@ -145,7 +145,7 @@ public class FootballPlayerAdapter extends UltimateViewAdapter<FootballPlayerAda
             }*/
 
             if(bean.getTeam() != null){
-                ImageLoader.getInstance().displayImage(HttpUrlConstant.SERVER_URL+CommonUtils.getRurl(bean.getTeam().getIconUrl()), teamImage, FootBallApplication.options);
+                ImageLoader.getInstance().displayImage(CommonUtils.getRurl(bean.getTeam().getIconUrl()), teamImage, FootBallApplication.options);
             }
 
             /* else{

@@ -57,7 +57,7 @@ public class StartActivity extends BaseActivity {
     }
 
     private void jumpToLoginActivity(){
-        Intent intent0 = new Intent(StartActivity.this,LoginActivity_.class);
+        Intent intent0 = new Intent(StartActivity.this,LoginActivity.class);
         startActivity(intent0);
         finish();
     }
@@ -110,14 +110,14 @@ public class StartActivity extends BaseActivity {
 
                     long gap = System.currentTimeMillis() - stattime;
                     if( gap >= 350){
-                        Intent intent0 = new Intent(StartActivity.this,MainActivity_.class);
+                        Intent intent0 = new Intent(StartActivity.this,MainActivity.class);
                         startActivity(intent0);
                         finish();
                     }else{
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                Intent intent0 = new Intent(StartActivity.this,MainActivity_.class);
+                                Intent intent0 = new Intent(StartActivity.this,MainActivity.class);
                                 startActivity(intent0);
                                 finish();
                             }

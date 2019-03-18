@@ -164,45 +164,53 @@ public class TeamDetialActivity extends BaseActivity {
         dianzanView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (FootBallApplication.teamLikes.size()>=FootBallApplication.like_team_max) {
-                    showMsg("您一天之内只有"+FootBallApplication.like_team_max+"次给球队点赞的机会！");
-                } else {
-                    boolean flag = false;
+                teamBean.setLikeNum(teamBean.getLikeNum() + 1);
+                likeNumV.setText(teamBean.getLikeNum() + "");
+                dianzanView.setClickable(false);
 
-                    // 如果用户已占赞，则显示灰色背景并且禁止再点击
-                    if (FootBallApplication.teamLikes!=null) {
-                        List<TeamLikeBean> list = FootBallApplication.teamLikes;
-                        for (Iterator iterator = list.iterator(); iterator.hasNext();) {
-                            TeamLikeBean teamLike = (TeamLikeBean) iterator.next();
-                            if (teamLike.getTeam().getId()==teamBean.getId()) { // 如果登录用户球队点赞集合包含当前的球队，是置灰点赞图标
-                                flag = true;
-                                likeNumV.setText((teamBean.getLikeNum()+1) + "");
-                                dianzanView.setBackgroundResource(R.drawable.shape_praise_grey_bg);
-                                dianzanView.setClickable(false);
-                                break;
-                            }
-                        }
-                    }
+                // 将点赞的记录填写到全局teamlikes中
+                TeamLikeBean bean = new TeamLikeBean(teamBean,FootBallApplication.userbean,1);
+                FootBallApplication.teamLikes.add(bean);
 
-                    if (!flag) {
-                        commit();
-                    }
-                }
+//                if (FootBallApplication.teamLikes.size()>=FootBallApplication.like_team_max) {
+//                    showMsg("您一天之内只有"+FootBallApplication.like_team_max+"次给球队点赞的机会！");
+//                } else {
+//                    boolean flag = false;
+//
+//                    // 如果用户已占赞，则显示灰色背景并且禁止再点击
+//                    if (FootBallApplication.teamLikes!=null) {
+//                        List<TeamLikeBean> list = FootBallApplication.teamLikes;
+//                        for (Iterator iterator = list.iterator(); iterator.hasNext();) {
+//                            TeamLikeBean teamLike = (TeamLikeBean) iterator.next();
+//                            if (teamLike.getTeam().getId()==teamBean.getId()) { // 如果登录用户球队点赞集合包含当前的球队，是置灰点赞图标
+//                                flag = true;
+//                                likeNumV.setText((teamBean.getLikeNum()+1) + "");
+//                                dianzanView.setBackgroundResource(R.drawable.shape_praise_grey_bg);
+//                                dianzanView.setClickable(false);
+//                                break;
+//                            }
+//                        }
+//                    }
+//
+//                    if (!flag) {
+//                        commit();
+//                    }
+//                }
             }
         });
 
         // 如果用户已占赞，则显示灰色背景并且禁止再点击
-        if (FootBallApplication.teamLikes!=null) {
-            List<TeamLikeBean> list = FootBallApplication.teamLikes;
-            for (Iterator iterator = list.iterator(); iterator.hasNext();) {
-                TeamLikeBean teamLike = (TeamLikeBean) iterator.next();
-                if (teamLike.getTeam().getId()==teamBean.getId()) { // 如果登录用户球队点赞集合包含当前的球队，是置灰点赞图标
-                    dianzanView.setBackgroundResource(R.drawable.shape_praise_grey_bg);
-                    dianzanView.setClickable(false);
-                    break;
-                }
-            }
-        }
+//        if (FootBallApplication.teamLikes!=null) {
+//            List<TeamLikeBean> list = FootBallApplication.teamLikes;
+//            for (Iterator iterator = list.iterator(); iterator.hasNext();) {
+//                TeamLikeBean teamLike = (TeamLikeBean) iterator.next();
+//                if (teamLike.getTeam().getId()==teamBean.getId()) { // 如果登录用户球队点赞集合包含当前的球队，是置灰点赞图标
+//                    dianzanView.setBackgroundResource(R.drawable.shape_praise_grey_bg);
+//                    dianzanView.setClickable(false);
+//                    break;
+//                }
+//            }
+//        }
 
     }
 
