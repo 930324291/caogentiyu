@@ -1497,24 +1497,24 @@ public class SmartClient implements IConfig {
     }
 
     private void debugres(String data) {
-        if (!TextUtils.isEmpty(data) && debug) {
-            Gson formatter = new GsonBuilder().setPrettyPrinting().create();
-            JsonElement je = new JsonParser().parse(data);
-            logger.info("========================Response: Success========================");
-            int size = 2500;
-            if (data.length() > size) {
-                for (int j = 0; j < (data.length() / size) + 1; j++) {
-                    if (j == data.length() / size) {
-                        logger.info("Result: " + data.substring(j * size));
-                    } else {
-                        logger.info("Result: " + data.substring(j * size, (j + 1) * size));
-                    }
-                }
-            } else {
-                logger.info("Result: " + data);
-            }
-            logger.info("DATA : " + formatter.toJson(je));
-        }
+//        if (!TextUtils.isEmpty(data) && debug) {
+//            Gson formatter = new GsonBuilder().setPrettyPrinting().create();
+//            JsonElement je = new JsonParser().parse(data);
+//            logger.info("========================Response: Success========================");
+//            int size = 2500;
+//            if (data.length() > size) {
+//                for (int j = 0; j < (data.length() / size) + 1; j++) {
+//                    if (j == data.length() / size) {
+//                        logger.info("Result: " + data.substring(j * size));
+//                    } else {
+//                        logger.info("Result: " + data.substring(j * size, (j + 1) * size));
+//                    }
+//                }
+//            } else {
+//                logger.info("Result: " + data);
+//            }
+//            logger.info("DATA : " + formatter.toJson(je));
+//        }
     }
 
     //---------------------------------------------------------------
