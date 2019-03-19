@@ -74,12 +74,13 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="排行榜"/>
+                android:text="资讯"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:layout_weight="1">
 
         </RelativeLayout>
@@ -107,7 +108,7 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="发布"/>
+                android:text="球队"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -133,7 +134,7 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="通知"/>
+                android:text="消息"/>
 
             <ImageView
                 android:id="@+id/dot"
@@ -154,7 +155,8 @@
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_main_circle"
         android:padding="8dp"
         android:src="@mipmap/add"
-        android:background="@drawable/shape_main_circle"/>
+        android:visibility="gone" />
 </RelativeLayout>

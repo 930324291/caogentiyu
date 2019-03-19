@@ -105,7 +105,7 @@ public class FootBallApplication extends Application implements IConfig {
         //初始化图片加载器
         init_imageloader(context);
         //是否打印log
-        appLog = true;
+        appLog = false;
         userbean = new UserBean();
         teamLikes = new ArrayList<>();
         playerLikes = new ArrayList<>();

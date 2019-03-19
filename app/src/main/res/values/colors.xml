@@ -20,7 +20,8 @@
     <color name="bg_042d45">#042d45</color>
     <color name="bg_112d4a">#112d4a</color>
     <color name="bg_6088b2">#6088b2</color>
-    <color name="bg_051429">#051429</color>
+    <!--<color name="bg_051429">#051429</color>-->
+    <color name="bg_051429">#0063f3</color>
     <color name="bg_63b3db">#63b3db</color>
     <color name="bg_275681">#275681</color>
     <color name="bg_FFDEAD">#FFDEAD</color>
