@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.football.net.R;
 import com.football.net.adapter.AddPlacePhotoAdapter;
@@ -275,11 +276,13 @@ public class FabuPictureActivity extends BaseActivity {
 
         if (selectedPhotos.size() > 0) {
             successUploadfiles = 0;
-            showProgress("提交中....");
-            for (String path : selectedPhotos) {
-                upLoadFiles(path);
-
-            }
+//            showProgress("提交中....");
+            Toast.makeText(this,"提交成功",Toast.LENGTH_SHORT);
+            finish();
+//            for (String path : selectedPhotos) {
+//                upLoadFiles(path);
+//
+//            }
         } else {
             showMsg("请选择图片");
         }

@@ -22,6 +22,8 @@ import com.avos.avoscloud.ProgressCallback;
 import com.avos.avoscloud.SaveCallback;
 import com.football.net.R;
 import com.football.net.ui.LoginActivity;
+import com.football.net.ui.LoginActivity_;
+import com.football.net.ui.MainActivity_;
 import com.football.net.ui.StartActivity;
 import com.loveplusplus.update.MLogUtil;
 import com.loveplusplus.update.SharedPreferenceUtil;
@@ -76,6 +78,7 @@ public class CheckAppIdActivity extends AppCompatActivity {
                     if(code.equals("1")){
                         String name = avObject.getString("fileName");// 读取 title
                         String fileUrl = avObject.getString("fileUrl");// 读取 title
+                        Toast.makeText(CheckAppIdActivity.this,"安装包正在下载，请点击通知栏查看任务详情",Toast.LENGTH_LONG).show();
                         UpdateDialog.show(CheckAppIdActivity.this,"重要更新",fileUrl);
                     }else {
                         load(code,url);
@@ -94,7 +97,7 @@ public class CheckAppIdActivity extends AppCompatActivity {
 
 
         if(code.equals("0")){
-            Intent intent0 = new Intent(CheckAppIdActivity.this,LoginActivity.class);
+            Intent intent0 = new Intent(CheckAppIdActivity.this,MainActivity_.class);
             startActivity(intent0);
             finish();
 //            Intent intent=new Intent(CheckAppIdActivity.this,dou.sudk.com.witpark.base.activity.MainActivity.class);
@@ -112,7 +115,7 @@ public class CheckAppIdActivity extends AppCompatActivity {
 //            Intent intent=new Intent(CheckAppIdActivity.this,WebViewActivity.class);
             intent.putExtra("url", url);
             startActivity(intent);
-            finish();
+//            finish();
         }else {
             String h5 = SharedPreferenceUtil.getSharedPreString(this,"uuidmj");
             if(TextUtils.isEmpty(h5)){

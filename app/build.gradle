@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 //apply plugin: 'android-apt'
 //def AAVersion = '4.0.0'
-def AAVersion = "4.4.0"
+def AAVersion = "4.5.0"
 
 android {
     useLibrary 'org.apache.http.legacy'
@@ -33,7 +33,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.football.net"
+        applicationId "com.shenbo.net"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
@@ -44,6 +44,14 @@ android {
 //            //设置支持的SO库架构，减少包大小
 //            abiFilters 'armeabi', 'x86' //'armeabi-v7a', 'arm64-v8a'// , 'x86_64'
         }
+
+        javaCompileOptions {
+
+           annotationProcessorOptions {
+               arguments = ['resourcePackageName': "com.football.net",
+                            'androidManifestFile': 'app/src/main/AndroidManifest.xml']
+           }
+       }
     }
 
     buildTypes {

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.football.net.R;
 import com.football.net.bean.ApplyBean;
@@ -158,9 +159,11 @@ public class FabuLookForTeamActivity extends BaseActivity {
             return;
         }
 
+        Toast.makeText(this,"提交成功",Toast.LENGTH_SHORT);
+        finish();
         //发送登录请求事件
-        showProgress("提交中....");
-        dealHttp(titleStr, contentStr);
+//        showProgress("提交中....");
+//        dealHttp(titleStr, contentStr);
     }
 
     public void dealHttp(final String param1, final String param2) {

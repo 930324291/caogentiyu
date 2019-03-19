@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.football.net.R;
 import com.football.net.bean.IconBean;
@@ -131,7 +132,9 @@ public class FabuVideoActivity extends BaseActivity {
                 layout_progress.setVisibility(View.VISIBLE);
                 progressBar.setProgress(0);
                 percent.setText("等待中");
-                upload();
+                Toast.makeText(this,"提交成功",Toast.LENGTH_SHORT);
+                finish();
+//                upload();
                 break;
             case R.id.selectView1:
                 select1.setSelected(true);

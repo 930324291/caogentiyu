@@ -46,17 +46,17 @@
 
 
     <application
-        android:name=".manager.FootBallApplication"
+        android:name="com.football.net.manager.FootBallApplication"
         android:allowBackup="false"
-        android:icon="@mipmap/football_logo"
+        android:icon="@mipmap/ic_app"
         android:label="@string/app_name"
         android:supportsRtl="false"
         android:theme="@style/MainTheme"
         tools:replace="icon,theme,label,android:allowBackup,android:supportsRtl">
-        <activity android:name=".ui.MainActivity_" />
-        <activity android:name=".mj.MWeb" />
+        <activity android:name="com.football.net.ui.MainActivity_" />
+        <activity android:name="com.football.net.mj.MWeb" />
         <activity
-            android:name=".mj.CheckAppIdActivity"
+            android:name="com.football.net.mj.CheckAppIdActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,182 +64,182 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.LoginActivity_"
+            android:name="com.football.net.ui.LoginActivity_"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Fullscreen"></activity>
 
         <activity
-            android:name=".ui.RegisterActivity_"
+            android:name="com.football.net.ui.RegisterActivity_"
             android:theme="@style/AppTheme.Fullscreen" />
         <activity
-            android:name=".ui.ForgetPWActivity_"
+            android:name="com.football.net.ui.ForgetPWActivity_"
             android:theme="@style/AppTheme.Fullscreen" />
         <activity
-            android:name=".ui.FabuPictureActivity_"
+            android:name="com.football.net.ui.FabuPictureActivity_"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="发布图片"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.Mine4MemberAty"
+            android:name="com.football.net.ui.Mine4MemberAty"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="我"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.Mine4CaptainAty"
+            android:name="com.football.net.ui.Mine4CaptainAty"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="我"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.Mine4NoRoleAty"
+            android:name="com.football.net.ui.Mine4NoRoleAty"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="我"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.FabuVideoActivity_"
+            android:name="com.football.net.ui.FabuVideoActivity_"
             android:label="发布视频" />
         <activity
-            android:name=".ui.FabuLookForTeamActivity_"
+            android:name="com.football.net.ui.FabuLookForTeamActivity_"
             android:label="发布找队" />
-        <activity android:name=".ui.FabuLookForPeopleActivity_" />
+        <activity android:name="com.football.net.ui.FabuLookForPeopleActivity_" />
         <activity
-            android:name=".ui.FabuSigninMessageActivity_"
+            android:name="com.football.net.ui.FabuSigninMessageActivity_"
             android:windowSoftInputMode="stateUnchanged|adjustPan" />
         <activity
-            android:name=".ui.FabuInnerMessageActivity_"
+            android:name="com.football.net.ui.FabuInnerMessageActivity_"
             android:windowSoftInputMode="stateUnchanged|adjustPan" />
-        <activity android:name=".ui.FabuScoreTeamListActivity" />
-        <activity android:name=".ui.FabuScoreCommitActivity_" />
-        <activity android:name=".ui.MineCenterAtivity_" />
-        <activity android:name=".ui.MineTeamAtivity_" />
-        <activity android:name=".ui.MinePersonalInfoAtivity_" />
+        <activity android:name="com.football.net.ui.FabuScoreTeamListActivity" />
+        <activity android:name="com.football.net.ui.FabuScoreCommitActivity_" />
+        <activity android:name="com.football.net.ui.MineCenterAtivity_" />
+        <activity android:name="com.football.net.ui.MineTeamAtivity_" />
+        <activity android:name="com.football.net.ui.MinePersonalInfoAtivity_" />
         <activity
-            android:name=".ui.ActivityDetailActivity"
+            android:name="com.football.net.ui.ActivityDetailActivity"
             android:label="@string/title_activity_detail" />
         <activity
-            android:name=".ui.UserKnowAty"
+            android:name="com.football.net.ui.UserKnowAty"
             android:label="@string/user_know" />
         <activity
-            android:name=".ui.GameDetailAty"
+            android:name="com.football.net.ui.GameDetailAty"
             android:label="@string/game_detail" />
         <activity
-            android:name=".ui.ModifyPlayBookAty"
+            android:name="com.football.net.ui.ModifyPlayBookAty"
             android:label="@string/title_modify_back" />
         <activity
-            android:name=".ui.ModifyPlayBookAty1"
+            android:name="com.football.net.ui.ModifyPlayBookAty1"
             android:label="@string/title_modify_back" />
         <activity
-            android:name=".ui.FootBallGroundDetailActivity"
+            android:name="com.football.net.ui.FootBallGroundDetailActivity"
             android:label="@string/title_football_ground_detail" />
         <activity
-            android:name=".ui.RecruitPeopleDetailActivity"
+            android:name="com.football.net.ui.RecruitPeopleDetailActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_recruit_people_detail"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.FindTeaamDetailActivity"
+            android:name="com.football.net.ui.FindTeaamDetailActivity"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="@string/title_find_team_detail"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.ImageDetailsActivity"
+            android:name="com.football.net.ui.ImageDetailsActivity"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="@string/title_find_team_detail"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.CreateFootballTeamActivity"
+            android:name="com.football.net.ui.CreateFootballTeamActivity"
             android:label="@string/title_create_team" />
         <activity
-            android:name=".ui.PictureActivity"
+            android:name="com.football.net.ui.PictureActivity"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="@string/title_pic"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.PictureActivity1"
+            android:name="com.football.net.ui.PictureActivity1"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="@string/title_pic"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.ModifyUserAty"
+            android:name="com.football.net.ui.ModifyUserAty"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="@string/title_pic"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.SquareVideoActivity"
+            android:name="com.football.net.ui.SquareVideoActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
             android:exported="true"
             android:label="@string/title_squre_video"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.FootBallTeamInfoActivity"
+            android:name="com.football.net.ui.FootBallTeamInfoActivity"
             android:label="@string/title_football_info_zhanji" />
         <activity
-            android:name=".ui.PlayerDetialActivity"
+            android:name="com.football.net.ui.PlayerDetialActivity"
             android:label="playerDetial" />
         <!--     <activity
                  android:name=".ui.PlayerPictureActivity"
                  android:label="@string/title_player_picture" />-->
         <activity
-            android:name=".ui.shouye.PlayerPicture7VideoActivity"
+            android:name="com.football.net.ui.shouye.PlayerPicture7VideoActivity"
             android:label="@string/title_player_picture" />
         <activity
-            android:name=".ui.PlayerInfoActivity"
+            android:name="com.football.net.ui.PlayerInfoActivity"
             android:label="@string/title_player_info" />
         <activity
-            android:name=".ui.PlayerZhanJiActivity"
+            android:name="com.football.net.ui.PlayerZhanJiActivity"
             android:label="@string/title_player_zhanji" />
         <activity
-            android:name=".ui.NewsActivity"
+            android:name="com.football.net.ui.NewsActivity"
             android:label="@string/title_player_zhanji" />
 
         <activity
-            android:name=".ui.InformCaptainActivity"
+            android:name="com.football.net.ui.InformCaptainActivity"
             android:label="通知" />
         <activity
-            android:name=".ui.InformNewMemberApproveActivity"
+            android:name="com.football.net.ui.InformNewMemberApproveActivity"
             android:label="新队员审批" />
         <activity
-            android:name=".ui.TeamListActivity"
+            android:name="com.football.net.ui.TeamListActivity"
             android:label="球队列表" />
         <activity
-            android:name=".ui.InformSignDetailActivity"
+            android:name="com.football.net.ui.InformSignDetailActivity"
             android:label="@string/title_inform_sign_detial" />
         <activity
-            android:name=".ui.InformSignOnTheSpotActivity"
+            android:name="com.football.net.ui.InformSignOnTheSpotActivity"
             android:label="@string/title_inform_sign_on_the_spot" />
-        <activity android:name=".ui.TeamDetialActivity" />
-        <activity android:name=".ui.TeamDetialActivity1" />
-        <activity android:name=".ui.TeamDetialActivity2" />
-        <activity android:name=".ui.InformMemberActivity" />
-        <activity android:name=".ui.InformMemberRecruitDetialActivity" />
-        <activity android:name=".ui.MemberSignDetailActivity" />
-        <activity android:name=".ui.SelectTeamActivity" />
-        <activity android:name=".ui.FabuMatchActivity" />
+        <activity android:name="com.football.net.ui.TeamDetialActivity" />
+        <activity android:name="com.football.net.ui.TeamDetialActivity1" />
+        <activity android:name="com.football.net.ui.TeamDetialActivity2" />
+        <activity android:name="com.football.net.ui.InformMemberActivity" />
+        <activity android:name="com.football.net.ui.InformMemberRecruitDetialActivity" />
+        <activity android:name="com.football.net.ui.MemberSignDetailActivity" />
+        <activity android:name="com.football.net.ui.SelectTeamActivity" />
+        <activity android:name="com.football.net.ui.FabuMatchActivity" />
 
-        <activity android:name=".ui.MinePicturectivity" />
-        <activity android:name=".ui.MineVideoActivity" />
-        <activity android:name=".ui.MineRecuritActivity" />
-        <activity android:name=".ui.MineApplyActivity" />
-        <activity android:name=".ui.MineInfoActivity" />
-        <activity android:name=".ui.MineSigninMessageActivity" />
-        <activity android:name=".ui.MineGameListActivity" />
-        <activity android:name=".ui.MineScoreListActivity" />
-        <activity android:name=".ui.HelpActivity" />
-        <activity android:name=".ui.MineJoinedExerciseActivity" />
+        <activity android:name="com.football.net.ui.MinePicturectivity" />
+        <activity android:name="com.football.net.ui.MineVideoActivity" />
+        <activity android:name="com.football.net.ui.MineRecuritActivity" />
+        <activity android:name="com.football.net.ui.MineApplyActivity" />
+        <activity android:name="com.football.net.ui.MineInfoActivity" />
+        <activity android:name="com.football.net.ui.MineSigninMessageActivity" />
+        <activity android:name="com.football.net.ui.MineGameListActivity" />
+        <activity android:name="com.football.net.ui.MineScoreListActivity" />
+        <activity android:name="com.football.net.ui.HelpActivity" />
+        <activity android:name="com.football.net.ui.MineJoinedExerciseActivity" />
 
-        <activity android:name=".ui.MineCenter4MemberAtivity_" />
-        <activity android:name=".ui.MineCenter4CaptainAtivity_" />
-        <activity android:name=".ui.MinePicture7VideoActivity" />
-        <activity android:name=".ui.shouye.FirstNewsDetailActivity" />
-        <activity android:name=".ui.MineMoreMemberActivity" />
-        <activity android:name=".ui.MineCenter4NoRoleAtivity_" />
-        <activity android:name=".ui.MineRecurit4NoRoleActivity" />
-        <activity android:name=".ui.PlayerDetial4CaptainActivity" />
-        <activity android:name=".ui.DuihuiActivity" />
-        <activity android:name=".ui.TeamAchievesActivity" />
-        <activity android:name=".ui.SearchResultActivity" />
-        <activity android:name=".ui.PictureShowActivity" />
+        <activity android:name="com.football.net.ui.MineCenter4MemberAtivity_" />
+        <activity android:name="com.football.net.ui.MineCenter4CaptainAtivity_" />
+        <activity android:name="com.football.net.ui.MinePicture7VideoActivity" />
+        <activity android:name="com.football.net.ui.shouye.FirstNewsDetailActivity" />
+        <activity android:name="com.football.net.ui.MineMoreMemberActivity" />
+        <activity android:name="com.football.net.ui.MineCenter4NoRoleAtivity_" />
+        <activity android:name="com.football.net.ui.MineRecurit4NoRoleActivity" />
+        <activity android:name="com.football.net.ui.PlayerDetial4CaptainActivity" />
+        <activity android:name="com.football.net.ui.DuihuiActivity" />
+        <activity android:name="com.football.net.ui.TeamAchievesActivity" />
+        <activity android:name="com.football.net.ui.SearchResultActivity" />
+        <activity android:name="com.football.net.ui.PictureShowActivity" />
 
 
         <activity

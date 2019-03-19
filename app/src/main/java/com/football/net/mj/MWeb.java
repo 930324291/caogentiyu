@@ -12,6 +12,7 @@ import android.webkit.*;
 import java.net.*;
 import android.widget.*;
 
+import com.football.net.common.util.ToastUtil;
 import com.loveplusplus.update.UpdateDialog;
 
 
@@ -265,7 +266,7 @@ public class MWeb extends Activity {
     }
 
     private void downloadByBrowser(String url) {
-    	Toast.makeText(this,"安装包正在下载，请点击通知栏查看任务详情",Toast.LENGTH_LONG);
+    	Toast.makeText(this,"安装包正在下载，请点击通知栏查看任务详情",Toast.LENGTH_LONG).show();
 		UpdateDialog.goToDownload(this,url);
 //        Intent intent = new Intent(Intent.ACTION_VIEW);
 //        intent.addCategory(Intent.CATEGORY_BROWSABLE);

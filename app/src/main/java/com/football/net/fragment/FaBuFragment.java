@@ -7,11 +7,16 @@ import com.football.net.R;
 import com.football.net.common.util.CommonUtils;
 import com.football.net.manager.BaseFragment;
 import com.football.net.ui.FabuInnerMessageActivity;
+import com.football.net.ui.FabuInnerMessageActivity_;
 import com.football.net.ui.FabuLookForPeopleActivity;
+import com.football.net.ui.FabuLookForPeopleActivity_;
 import com.football.net.ui.FabuPictureActivity;
+import com.football.net.ui.FabuPictureActivity_;
 import com.football.net.ui.FabuScoreTeamListActivity;
 import com.football.net.ui.FabuSigninMessageActivity;
+import com.football.net.ui.FabuSigninMessageActivity_;
 import com.football.net.ui.FabuVideoActivity;
+import com.football.net.ui.FabuVideoActivity_;
 
 
 import butterknife.OnClick;
@@ -39,22 +44,22 @@ public class FaBuFragment extends BaseFragment {
         }
         switch (v.getId()) {
             case R.id.tab1:
-                startActivity(new Intent(getActivity(),FabuPictureActivity.class));
+                startActivity(new Intent(getActivity(),FabuPictureActivity_.class));
                 break;
             case R.id.tab2:
-                startActivity(new Intent(getActivity(),FabuVideoActivity.class));
+                startActivity(new Intent(getActivity(),FabuVideoActivity_.class));
                 break;
             case R.id.tab3:
-                startActivity(new Intent(getActivity(),FabuLookForPeopleActivity.class));
+                startActivity(new Intent(getActivity(),FabuLookForPeopleActivity_.class));
                 break;
             case R.id.tab4:
                 startActivity(new Intent(getActivity(),FabuScoreTeamListActivity.class));
                 break;
             case R.id.tab5:
-                startActivity(new Intent(getActivity(),FabuSigninMessageActivity.class));
+                startActivity(new Intent(getActivity(),FabuSigninMessageActivity_.class));
                 break;
             case R.id.tab6:
-                startActivity(new Intent(getActivity(),FabuInnerMessageActivity.class));
+                startActivity(new Intent(getActivity(),FabuInnerMessageActivity_.class));
                 break;
         }
     }
