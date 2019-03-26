@@ -55,6 +55,7 @@
             android:id="@+id/rel_paihangbang"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:layout_weight="1">
 
             <ImageView
@@ -89,6 +90,7 @@
             android:id="@+id/rel_fabu"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:layout_weight="1">
 
             <ImageView
@@ -134,7 +136,7 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="消息"/>
+                android:text="我"/>
 
             <ImageView
                 android:id="@+id/dot"

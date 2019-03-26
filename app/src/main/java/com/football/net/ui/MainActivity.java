@@ -26,6 +26,7 @@ import com.football.net.manager.FootBallApplication;
 import com.football.net.ui.shouye.InformCaptainFrg;
 import com.football.net.ui.shouye.InformMemberFrg;
 import com.football.net.ui.shouye.MainFragment;
+import com.football.net.ui.shouye.SquareFragment;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import org.androidannotations.annotations.AfterViews;
@@ -77,14 +78,16 @@ public class MainActivity extends BaseActivity {
 
     Fragment[] fragments;
     int currentPosition;
-    private MainFragment mainFragment;
+//    private MainFragment mainFragment;
+    private SquareFragment mainFragment;
 
     //androidannotations注解, 初始化view
     @AfterViews
     void initView() {
         setResult(12);
 
-        mainFragment = new MainFragment();
+//        mainFragment = new MainFragment();
+        mainFragment = SquareFragment.newInstance();
         // 排行榜界面
         PaiHangBangFragment phbFragment = new PaiHangBangFragment();
 
@@ -121,7 +124,8 @@ public class MainActivity extends BaseActivity {
 //            }
 //        }
 
-        fragments = new Fragment[]{mainFragment, phbFragment, faBuFragment, mineFragment};
+//        fragments = new Fragment[]{mainFragment, phbFragment, faBuFragment, mineFragment};
+        fragments = new Fragment[]{mainFragment, mineFragment};
         viewPager.setAdapter(new MainFragmentAdapter(getSupportFragmentManager()));
         currentPosition = 0;
         setBottomTab(0);
@@ -227,15 +231,11 @@ public class MainActivity extends BaseActivity {
         if (currentPosition != 0) {
             setCurrentViewPager(0);
         } else {
-            if (mainFragment.getCurrentPosition() != 0) {
-                mainFragment.setCurrentPos(0);
+            if ((System.currentTimeMillis() - exitTime) > 2000) {
+                showMsg("再按一次退出程序");
+                exitTime = System.currentTimeMillis();
             } else {
-                if ((System.currentTimeMillis() - exitTime) > 2000) {
-                    showMsg("再按一次退出程序");
-                    exitTime = System.currentTimeMillis();
-                } else {
-                    exitApp();
-                }
+                exitApp();
             }
         }
     }

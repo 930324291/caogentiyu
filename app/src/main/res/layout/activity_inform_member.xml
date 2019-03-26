@@ -19,7 +19,7 @@
             android:layout_height="26dp"
             android:background="@drawable/selector_inform_tab"
             android:gravity="center"
-            android:text="草根足球"
+            android:text="足球"
             android:textColor="@color/paihangbang_tab1_text_selector"
             android:textSize="12sp" />
 
