@@ -10,6 +10,7 @@
         android:layout_height="48dp"
         android:background="@mipmap/item_bg1"
         android:focusable="true"
+        android:visibility="gone"
         android:focusableInTouchMode="true">
 
         <ImageView
@@ -59,7 +60,7 @@
         android:id="@+id/home_tablayout"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@mipmap/shouye_header_bg"
+        android:background="@color/colorPrimary"
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/transparent"
         app:tabMode="scrollable">

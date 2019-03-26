@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">必发体育</string>
+    <string name="app_name">亚博</string>
     <string name="title_activity_login">LoginActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
     <string-array name="home_title_tab">
-        <item>头条</item>
-        <item>广场</item>
-        <item>球队</item>
-        <item>球员</item>
         <item>赛事</item>
+        <item>约战</item>
+        <item>队伍</item>
+        <item>球员</item>
+        <item>比赛</item>
         <item>转会</item>
-        <item>球场</item>
+        <item>场地</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
