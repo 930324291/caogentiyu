@@ -23,6 +23,7 @@ import com.football.net.http.SmartParams;
 import com.football.net.http.reponse.impl.UnreadNumResult;
 import com.football.net.manager.BaseActivity;
 import com.football.net.manager.FootBallApplication;
+import com.football.net.ui.shouye.FootballTeamFragment1;
 import com.football.net.ui.shouye.InformCaptainFrg;
 import com.football.net.ui.shouye.InformMemberFrg;
 import com.football.net.ui.shouye.MainFragment;
@@ -79,7 +80,7 @@ public class MainActivity extends BaseActivity {
     Fragment[] fragments;
     int currentPosition;
 //    private MainFragment mainFragment;
-    private SquareFragment mainFragment;
+    private FootballTeamFragment1 mainFragment;
 
     //androidannotations注解, 初始化view
     @AfterViews
@@ -87,7 +88,7 @@ public class MainActivity extends BaseActivity {
         setResult(12);
 
 //        mainFragment = new MainFragment();
-        mainFragment = SquareFragment.newInstance();
+        mainFragment = FootballTeamFragment1.newInstance();
         // 排行榜界面
         PaiHangBangFragment phbFragment = new PaiHangBangFragment();
 
@@ -125,7 +126,7 @@ public class MainActivity extends BaseActivity {
 //        }
 
 //        fragments = new Fragment[]{mainFragment, phbFragment, faBuFragment, mineFragment};
-        fragments = new Fragment[]{mainFragment, mineFragment};
+        fragments = new Fragment[]{mainFragment, faBuFragment};
         viewPager.setAdapter(new MainFragmentAdapter(getSupportFragmentManager()));
         currentPosition = 0;
         setBottomTab(0);

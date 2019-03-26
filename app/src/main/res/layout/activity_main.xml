@@ -28,6 +28,7 @@
         <RelativeLayout
             android:id="@+id/rel_shouye"
             android:layout_width="0dp"
+            android:visibility="gone"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
@@ -55,7 +56,6 @@
             android:id="@+id/rel_paihangbang"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:visibility="gone"
             android:layout_weight="1">
 
             <ImageView
@@ -75,7 +75,7 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="资讯"/>
+                android:text="球员"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -90,7 +90,6 @@
             android:id="@+id/rel_fabu"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:visibility="gone"
             android:layout_weight="1">
 
             <ImageView
@@ -110,13 +109,14 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="球队"/>
+                android:text="发布"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rel_wo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:layout_weight="1">
 
             <ImageView
@@ -136,7 +136,7 @@
                 android:layout_marginTop="2dp"
                 android:textSize="12sp"
                 android:textColor="@color/tablayout_tab_text_selector"
-                android:text="我"/>
+                android:text="站内信"/>
 
             <ImageView
                 android:id="@+id/dot"

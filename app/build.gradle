@@ -33,7 +33,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.jbb.caogen"
+        applicationId "com.bet.caogen"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
